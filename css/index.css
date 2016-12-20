@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 12px/1.5 Arial, "Microsoft Yahei";
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 177237 */
+    src: url('//at.alicdn.com/t/font_qaum8sdicrpv6lxr.eot');
+    src: url('//at.alicdn.com/t/font_qaum8sdicrpv6lxr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_qaum8sdicrpv6lxr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_qaum8sdicrpv6lxr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_qaum8sdicrpv6lxr.svg#iconfont') format('svg');
+}
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i, em {
+    font-style: normal;
+}
+
+b, strong {
+    font-weight: normal;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+input {
+    outline: none;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+header{
+    position: relative;
+}
+/*LOGO*/
+nav h1{
+    float: left;
+
+}
+/*导航栏-右边*/
+nav .box{
+    height: 30px;
+}
+nav .right{
+    float: right;
+}
+nav .right li{
+    float: left;
+    margin: 0 12px;
+    position: relative;
+}
+nav .right li a{
+    color: #999;
+    line-height: 30px;
+    text-align: center;
+}
+nav .right li>i{
+    width: 1px;
+    height: 10px;
+    background: #999;
+    position: absolute;
+    top: 10px;
+    left: -12px;
+}
+nav .right .hello a:nth-child(2){
+    padding-left: 5px;
+    color: #f10215;
+}
+/*箭头*/
+nav .right .down a b:nth-child(1){
+    display: inline-block;
+    margin: 5px 0 0 4px;
+    vertical-align: middle;
+    border: 5px solid;
+    border-color: #999 transparent transparent transparent;
+}
+nav .right .down a b:nth-child(2){
+    position: absolute;
+    top: 11px;
+    right: -1px;
+    border: 6px solid;
+    border-color: #e3e4e5 transparent transparent transparent;
+}
+nav .right li a:hover{
+    color: #c81623;
+}
+/*导航栏-左边北京*/
+nav .left{
+    float: left;
+    margin-left: 20px;
+    width: 57px;
+    height: 28px;
+    border: 1px solid #e3e4e5;
+    text-align: center;
+    position: relative;
+}
+nav .left .iconfont{
+    font-family:"iconfont";
+    font-size:16px;
+    color: #f10215;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+nav .left>span{
+    color: #999;
+    line-height: 30px;
+}
+nav .left .place{
+    position: absolute;
+    top: 28px;
+    left: -1px;
+    border: 1px solid #ccc;
+    /*border-color:#fff #ccc #ccc #ccc;*/
+    box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    padding: 10px;
+    width: 300px;
+    background: #fff;
+    display: none;
+    z-index: 10;
+}
+nav .left .place:before{
+    width: 57px;
+    height: 1px;
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+nav .left .place li{
+    height: 30px;
+}
+nav .left .place li span{
+    display: inline-block;
+    margin: 2px 10px;
+    width: 40px;
+    line-height: 24px;
+    text-align: center;
+}
+nav .left .place span.placeSelect{
+    background: #f10215;
+    color: #fff;
+}
+nav .left:hover{
+    background: #fff;
+    border-color: #ccc #ccc #fff #ccc;
+}
+nav .left:hover .place{
+    display: block;
+}
+/*搜索区-搜索栏*/
+.search-area{
+    height: 140px;
+}
+.search-area .box{
+    height: 100%;
+    position: relative;
+}
+.search-area .search-bar{
+    position: absolute;
+    top: 25px;
+    left: 320px;
+}
+.search-area input[type=text]{
+    float: left;
+    width: 500px;
+    height: 25px;
+    border: 1px solid #f10215;
+    padding: 4px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.search-area .search-bar>div{
+    float: left;
+    width: 35px;
+    height: 35px;
+    padding-left: 15px;
+    border: none;
+    background-color: #f10215;
+}
+.search-area .search-bar .iconfont{
+    text-align: center;
+    line-height: 35px;
+    font-family:"iconfont";
+    font-size:21px;
+    color: #fff;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*搜索区-购物车*/
+.search-area .shoppingCart{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 190px;
+    height: 36px;
+    background: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 36px;
+    z-index: 1;
+}
+.search-area .shoppingCart a{
+    color: #f10215;
+}
+.search-area .shoppingCart .sup{
+    position: absolute;
+    top: 5px;
+    right: 33px;
+    width: 13px;
+    height: 13px;
+    padding: 1px;
+    text-align: center;
+    line-height: 14px;
+    color: #fff;
+    background-color: #f10215;
+    border-radius: 50%;
+}
+.search-area .shoppingCart .iconfont{
+    font-family:"iconfont";
+    font-size:21px;
+    color: #f10215;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.search-area .shoppingCart .shopDrop{
+    width: 260px;
+    height:50px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+    position: absolute;
+    top:35px;
+    right: -1px;
+    display: none;
+}
+.search-area .shoppingCart .shopDrop b{
+    display: inline-block;
+    width: 56px;
+    height: 49px;
+    background: url("../img/shoppingCart.png") no-repeat ;
+
+}
+.search-area .shoppingCart .shopDrop span{
+    line-height: 50px;
+    vertical-align: 20px;
+    color:#999 ;
+}
+.search-area .shoppingCart .shopDrop s{
+    width: 190px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+.search-area .shoppingCart:hover .shopDrop{
+    display: block;
+}
+/*热词*/
+.search-area .hotWords{
+    position: absolute;
+    top: 65px;
+    left: 320px;
+    width: 550px;
+    height: 20px;
+    line-height: 20px;
+}
+.search-area .hotWords span{
+    display: inline-block;
+    padding-right: 10px;
+    color: #999;
+}
+.search-area .hotWords span:hover{
+    color: #c81623;
+}
+/*shopItems*/
+.search-area .shopItems{
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    width: 790px;
+    height: 40px;
+}
+.search-area .shopItems ul.clearfix li a:hover{
+    color:#c81623;
+}
+.search-area .shopItems ul:nth-child(1){
+    float: left;
+    padding-right:20px;
+    position: relative;
+}
+.search-area .shopItems ul:nth-child(1):after{
+    width: 1px;
+    height: 10px;
+    content: '';
+    background: #999;
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+.search-area .shopItems ul:nth-child(1) li{
+    float: left;
+    height: 40px;
+    text-align: center;
+    margin-left: 30px;
+}
+.search-area .shopItems ul:nth-child(1) li a{
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #666;
+}
+.search-area .shopItems ul:nth-child(2){
+    float: left;
+    padding-left:20px;
+    position:relative;
+}
+.search-area .shopItems ul:nth-child(2):after{
+    width: 1px;
+    height: 10px;
+    content: '';
+    background: #999;
+    position: absolute;
+    top: 13px;
+    right: 9px;
+}
+.search-area .shopItems ul:nth-child(2) li{
+    float: left;
+    height: 40px;
+    text-align: center;
+    margin-right: 30px;
+}
+.search-area .shopItems ul:nth-child(2) li a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #666;
+    line-height: 40px;
+}
+.search-area .shopItems ul:nth-child(3) li{
+    float: left;
+    height: 40px;
+
+    text-align: center;
+    margin-left: 10px;
+}
+.search-area .shopItems ul:nth-child(3) li a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #666;
+    line-height: 40px;
+}
+.reduction{
+    position: relative;
+}
+.reduction sup{
+    width: 30px;
+    height: 18px;
+    background: url("../img/jianmian.png") no-repeat;
+    background-size:  contain;
+    position: absolute;
+    top: 0;
+    left: 48px;
+}
+/*倒计时*/
+.search-area .count{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+.search-area .count img{
+    width: 190px;
+    height: 40px;
+}
+/*轮播区-左侧栏*/

@@ -1,0 +1,25 @@
+项目描述：
+    1、本项目为PC端页面开发
+    2、采用H5标签搭建页面基本结构，javascript采用面向对象的单例模式开发
+    3、less ejs jquery iconfont bootstrap
+    4、ajax jsonp 轮播图 延迟加载 瀑布流 处理兼容
+    5、头部原生写，main用less+jq+插件，个别模块bootstrap easyUI
+    DOM库 运动库(tween动画) 事件库
+
+
+    4写crm的时候node+express+angular等
+    移动端常用插件：less zepto iscroll swiper annimate
+    PC端常用插件：less jquery ejs iscroll bootstrap？ EasyUI？
+    后台常用插件：
+
+问题：？？？
+    已解决：
+    1、动态添加ID实现动画失败--swiper设置loop循环后，默认在html结构中添加首尾两个滑块-对滑块索引的处理。
+
+    未解决：
+    1、整平切换slide6打字效果，向上滑正常打字，向下滑不打字、回滑闪屏问题，从魔方直接进入slide6也是闪。
+
+
+    待实现：
+    1、实现滑块内点击next按钮页面跳转
+

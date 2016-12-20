@@ -1,0 +1,10 @@
+[
+{"imgSrc":"img/header/slide/slide1.jpg","desc":"这是测试图片"},
+{"imgSrc":"img/header/slide/slide2.jpg","desc":"这是测试图片"},
+{"imgSrc":"img/header/slide/slide3.jpg","desc":"这是测试图片"},
+{"imgSrc":"img/header/slide/slide4.jpg","desc":"这是测试图片"},
+{"imgSrc":"img/header/slide/slide5.jpg","desc":"这是测试图片"},
+{"imgSrc":"img/header/slide/slide6.jpg","desc":"这是测试图片"},
+{"imgSrc":"img/header/slide/slide7.jpg","desc":"这是测试图片"},
+{"imgSrc":"img/header/slide/slide8.jpg","desc":"这是测试图片"}
+]
