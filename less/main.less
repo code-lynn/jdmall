@@ -1,0 +1,660 @@
+@import (reference) 'public';
+//网页内容
+main{
+  .sk{
+    margin-bottom: 30px;
+    height: 305px;
+    .content{
+      overflow: hidden;
+      margin: 0 auto;
+      width: 1190px;
+      .head{
+        position: relative;
+        padding: 0 20px 0 30px;
+        height: 55px;
+        background: url("../img/main/sk/skl_hd.png") no-repeat 0 0;
+        line-height: 55px;
+        .left{
+          float: left;
+          color: @color-white;
+          .corner1{
+            background: url('../img/main/label1.png') no-repeat -190px -48px;
+            -moz-background-size:218px 188px;
+            background-size: 218px 188px;
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            left: -4px;
+            top: -4px;
+          }
+          .corner2{
+            float: left;
+            margin-top: 8px;
+            margin-right: 8px;
+            background: url('../img/main/label1.png') no-repeat 0 -40px;
+            -moz-background-size: 218px 188px;
+            background-size: 218px 188px;
+            width: 34px;
+            height: 40px;
+          }
+          h3{
+            float: left;
+            font-family: fzzhengheis-el-gbregular;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 40px;
+            height: 40px;
+            padding-top: 9px;
+          }
+          a{
+            float: left;
+            margin-left: 12px;
+            position: relative;
+            margin-top: 20px;
+            padding-right: 20px;
+            height: 24px;
+            line-height: 24px;
+            font-size: 14px;
+            color: @color-white;
+            b{
+              background: url('../img/main/label1.png') no-repeat -154px -40px;
+              -moz-background-size: 218px 188px;
+              background-size: 218px 188px;
+              width: 15px;
+              height: 16px;
+              position: absolute;
+              right: 0;
+              top: 4px;
+            }
+          }
+        }
+        .right{
+          float: right;
+          span{
+            float: left;
+            line-height: 45px;
+            padding-top: 10px;
+            font-size: 14px;
+            color: @color-white;
+          }
+          .timer{
+            float: left;
+            margin-left: 6px;
+            margin-right: 8px;
+            div{
+              float: left;
+              width: 35px;
+              height: 36px;
+              background-color: #440106;
+              -moz-border-radius: 3px;
+              border-radius: 3px;
+              text-align: center;
+              margin-top: 10px;
+              em{
+                display: block;
+                color: #f90013;
+                font-size: 24px;
+                font-family: Arial;
+                font-weight: 700;
+                line-height: 36px;
+              }
+            }
+            i{
+              float: left;
+              margin: 20px 4px 0;
+              width: 4px;
+              height: 16px;
+              font-size:16px;
+              line-height: 16px;
+              color: #440106;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+      .body{
+        padding: 12px 0 13px;
+        height: 225px;
+        overflow: hidden;
+        background: @color-white;
+        ul{
+          li{
+            float: left;
+            width: 170px;
+            height: 225px;
+            padding: 0 14px 0 15px;
+            border-right: 1px solid #e7e7e7;
+            .pic{
+              margin: 0 auto;
+              position: relative;
+              a{
+                display: block;
+                width: 130px;
+                color: #666;
+                text-decoration: none;
+                text-align: center;
+                padding: 16px 0;
+                margin: 0 auto;
+                &:hover img{
+                  -webkit-transform: translateY(-5px);
+                  -moz-transform: translateY(-5px);
+                  -ms-transform: translateY(-5px);
+                  transform: translateY(-5px);
+                }
+                img{
+                  width: 130px;
+                  height: 130px;
+                  /*-webkit-transition: -webkit-transform .4s ease;
+                  transition: -webkit-transform .4s ease;
+                  -moz-transition: transform .4s ease,-moz-transform .4s ease;
+                  transition: transform .4s ease;*/
+                  transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease;
+                  -webkit-transform: translateY(0);
+                  -moz-transform: translateY(0);
+                  -ms-transform: translateY(0);
+                  transform: translateY(0);
+                }
+              }
+              s{
+                position: absolute;
+                left: 0;
+                top: 130px;
+                text-align: center;
+                background: url('../img/main/label1.png') no-repeat 0 0;
+                -moz-background-size: 218px 188px;
+                background-size: 218px 188px;
+                width: 170px;
+                height: 20px;
+              }
+            }
+            .item{
+              max-width: 100%;
+              _width: 100%;
+              overflow: hidden;
+              color: #999;
+              font-size: 12px;
+              text-align: left;
+              height: 32px;
+              line-height: 16px;
+              word-wrap: break-word;
+              word-break: break-all;
+              &:hover{
+                color: @color-red;
+              }
+            }
+            .sale{
+              padding: 3px 0;
+              height: 25px;
+              span{
+                color: @color-gray;
+              }
+              b{
+                font-size: 18px;
+                font-weight: 700;
+                color: @color-red;
+                margin-right: 8px;
+              }
+              .red{
+                color: @color-red;
+              }
+            }
+          }
+          li.no_border{
+            border-right:none;
+          }
+          li.sk_pic{
+            padding: 0;
+            margin: 0 10px 0 0;
+            width: 180px;
+            height: 225px;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fhr{
+    height: 444px;
+    margin-bottom: 30px;
+    .content{
+      margin: 0 auto;
+      width: 1190px;
+      .fd{
+        margin-right: 10px;
+        width: 390px;
+        height: 444px;
+        float: left;
+        overflow: hidden;
+        .hd{
+          position: relative;
+          padding: 0 20px 0 30px;
+          height: 55px;
+          line-height: 55px;
+          color: #fff;
+          background: #4998a1;
+          background-image: -webkit-linear-gradient(left,#4998a1,#2e828b);
+          background-image: -moz-linear-gradient(left,#4998a1,#2e828b);
+          background-image: linear-gradient(90deg,#4998a1,#2e828b);
+          .corner1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 19px solid #f6f6f6;
+            border-right: 19px solid transparent;
+          }
+          .corner2{
+            position: absolute;
+            left: -4px;
+            top: -4px;
+            width: 28px;
+            height: 28px;
+            background: url('../img/main/label1.png') no-repeat -190px -96px;
+            -moz-background-size: 218px 188px;
+            background-size: 218px 188px;
+          }
+          h3{
+            font-family: fzzhengheis-el-gbregular;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 40px;
+            height: 40px;
+            padding-top: 9px;
+            float: left;
+          }
+          a{
+            position: relative;
+            float: right;
+            margin-top: 19px;
+            padding-right: 20px;
+            height: 24px;
+            line-height: 24px;
+            font-size: 14px;
+            color: #fff;
+            b{
+              background: url('../img/main/label1.png') no-repeat -154px -40px;
+              background-size: 218px 188px;
+              width: 15px;
+              height: 16px;
+              position: absolute;
+              right: 0;
+              top: 4px;
+            }
+          }
+        }
+        .bd{
+          padding: 10px;
+          height: 369px;
+          background: @color-white;
+          ul{
+            width: 370px;
+            height: 363px;
+            overflow: hidden;
+            li{
+              float: left;
+              /*width: 184px;
+              height: 120px;*/
+              border-right: 1px solid #e7e7e7;
+              border-bottom: 1px solid #e7e7e7;
+              &.border2{
+                border-right: 0;
+                margin-right: -1px;
+              }
+              &.border4{
+                border-right: 0;
+                margin-right: -1px;
+              }
+              &.border5{
+                border-bottom: 0;
+              }
+              &.border6{
+                border-right: 0;
+                border-bottom: 0;
+                margin-right: -1px;
+              }
+              a{
+                width: 184px;
+                height: 120px;
+                display: block;
+                position: relative;
+                text-decoration: none;
+                &:hover img{
+                  -webkit-transform: translateX(-5px);
+                  -moz-transform: translateX(-5px);
+                  -ms-transform: translateX(-5px);
+                  transform: translateX(-5px);
+                }
+                p{
+                  font-size: 14px;
+                  color: #4998a1;
+                  position: absolute;
+                  top: 15px;
+                  left: 20px;
+                  width: 80px;
+                  line-height: 20px;
+                  z-index: 1;
+                  word-wrap: break-word;
+                }
+                img{
+                  position: absolute;
+                  bottom: 5px;
+                  right: 10px;
+                  width: 80px;
+                  height: 80px;
+                  vertical-align: middle;
+
+                  -webkit-transition: -webkit-transform .4s ease-out;
+                  -moz-transition: -moz-transform .4s ease-out;
+                  transition: -webkit-transform .4s ease-out;
+                  -moz-transition: transform .4s ease-out,-moz-transform .4s ease-out;
+                  //transition: transform .4s ease-out;
+                  transition: transform .4s ease-out,-webkit-transform .4s ease-out,-moz-transform .4s ease-out;
+                }
+              }
+            }
+          }
+        }
+      }
+      .hl{
+        margin-right: 10px;
+        width: 390px;
+        height: 444px;
+        float: left;
+        overflow: hidden;
+        .hd{
+          position: relative;
+          padding: 0 20px 0 30px;
+          height: 55px;
+          line-height: 55px;
+          color: #fff;
+          background: #7d2e5c;
+          background-image: -webkit-linear-gradient(left,#7d2e5c,#6f184a);
+          background-image: -moz-linear-gradient(left,#7d2e5c,#6f184a);
+          background-image: linear-gradient(90deg,#7d2e5c,#6f184a);
+          .corner1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 19px solid #f6f6f6;
+            border-right: 19px solid transparent;
+          }
+          .corner2{
+            position: absolute;
+            left: -4px;
+            top: -4px;
+            width: 28px;
+            height: 28px;
+            background: url('../img/main/label1.png') no-repeat 0 -160px;
+            -moz-background-size: 218px 188px;
+            background-size: 218px 188px;
+          }
+          h3{
+            font-family: fzzhengheis-el-gbregular;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 40px;
+            height: 40px;
+            padding-top: 9px;
+            float: left;
+          }
+          a{
+            position: relative;
+            float: right;
+            margin-top: 19px;
+            padding-right: 20px;
+            height: 24px;
+            line-height: 24px;
+            font-size: 14px;
+            color: #fff;
+            b{
+              background: url('../img/main/label1.png') no-repeat -154px -40px;
+              background-size: 218px 188px;
+              width: 15px;
+              height: 16px;
+              position: absolute;
+              right: 0;
+              top: 4px;
+            }
+          }
+        }
+        .bd{
+          padding: 10px;
+          height: 369px;
+          background-color: @color-white;
+          .brand_up{
+            margin-bottom: 12px;
+            height: 227px;
+            overflow: hidden;
+            .up_left{
+              float: left;
+              width: 185px;
+              a{
+                display: block;
+                padding: 15px 22px 10px 23px;
+                border-right: 1px solid #e7e7e7;
+                &:hover .pic img{
+                  -webkit-transform: translateX(-5px);
+                  -moz-transform: translateX(-5px);
+                  -ms-transform: translateX(-5px);
+                  transform: translateX(-5px);
+                }
+                .name{
+                  font-size: 16px;
+                  color: #8b3a6d;
+                  margin-bottom: 5px;
+                  line-height: 18px;
+                  height: 18px;
+                  overflow: hidden;
+                }
+                .desc{
+                  color: #666;
+                  height: 36px;
+                  margin-bottom: 8px;
+                  overflow: hidden;
+                }
+                .split{
+                  width: 19px;
+                  height: 3px;
+                  background: #8b3a6d;
+                  margin-bottom: 12px;
+                }
+                .pic{
+                  width: 140px;
+                  height: 120px;
+                  img{
+                    width: 100%;
+                    height:100%;
+                    -webkit-transition: -webkit-transform .4s ease-out;
+                    -moz-transition: -moz-transform .4s ease-out;
+                    transition: -webkit-transform .4s ease-out;
+                    -moz-transition: transform .4s ease-out,-moz-transform .4s ease-out;
+                    //transition: transform .4s ease-out;
+                    transition: transform .4s ease-out,-webkit-transform .4s ease-out,-moz-transform .4s ease-out;
+                  }
+                }
+              }
+            }
+            .up_right{
+              .up_left;
+              a{
+                border-right: 0;
+              }
+            }
+          }
+          .brand_down{
+            width: 370px;
+            height: 130px;
+          }
+        }
+      }
+      .rk{
+        width: 390px;
+        height: 444px;
+        float: left;
+        overflow: hidden;
+        .hd{
+          position: relative;
+          padding: 0 20px 0 30px;
+          height: 55px;
+          line-height: 55px;
+          color: #fff;
+          background: #e77005;
+          background-image: -webkit-linear-gradient(left,#e77005,#e45d04);
+          background-image: -moz-linear-gradient(left,#e77005,#e45d04);
+          background-image: linear-gradient(90deg,#e77005,#e45d04);
+          .corner1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 19px solid #f6f6f6;
+            border-right: 19px solid transparent;
+          }
+          .corner2{
+            position: absolute;
+            left: -4px;
+            top: -4px;
+            width: 28px;
+            height: 28px;
+            background: url('../img/main/label1.png') no-repeat -190px 0;
+            -moz-background-size: 218px 188px;
+            background-size: 218px 188px;
+          }
+          h3{
+            font-family: fzzhengheis-el-gbregular;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 40px;
+            height: 40px;
+            padding-top: 9px;
+            float: left;
+          }
+          a{
+            position: relative;
+            float: right;
+            margin-top: 19px;
+            padding-right: 20px;
+            height: 24px;
+            line-height: 24px;
+            font-size: 14px;
+            color: #fff;
+            b{
+              background: url('../img/main/label1.png') no-repeat -154px -40px;
+              background-size: 218px 188px;
+              width: 15px;
+              height: 16px;
+              position: absolute;
+              right: 0;
+              top: 4px;
+            }
+          }
+        }
+        .bd{
+          height: 389px;
+          background-color: @color-white;
+          .tab{
+            padding: 6px 0 7px;
+            font-size: 0;
+            border-bottom: 1px solid #e7e7e7;
+            width: 370px;
+            height: 18px;
+            margin: 0 auto;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            a{
+              display: inline-block;
+              line-height: 18px;
+              font-size: 14px;
+              color: @color-font;
+              width: 77px;
+              border-right: 1px solid #d2d1d1;
+              text-align: center;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              &:hover{
+                color: @color-red;
+              }
+              &.first{
+                margin-left: -10px;
+              }
+            }
+          }
+          .con{
+            padding: 10px;
+            .chfy{
+              height: 335px;
+              overflow: hidden;
+              //display: none;
+              ul{
+                height: 100%;
+                li{
+                  position: relative;
+                  float: left;
+                  width: 123px;
+                  text-align: center;
+                  a{
+                    display: block;
+                    padding: 12px 0;
+                    border-right: 1px solid #e7e7e7;
+                    border-bottom: 1px solid #e7e7e7;
+                    cursor: pointer;
+                    &.rank3,&.rank6{
+                      border-right:0;
+                    }
+                    &.rank4,&.rank5,&.rank6{
+                      border-bottom: 0;
+                    }
+                    .rank_num{
+                      background: url('../img/main/label1.png') no-repeat -104px -40px;
+                      -moz-background-size: 218px 188px;
+                      background-size: 218px 188px;
+                      width: 30px;
+                      height: 40px;
+
+                      position: absolute;
+                      top: 12px;
+                      left: 11px;
+                      color: #fff;
+                      line-height: 35px;
+                      text-align: center;
+                      font-size: 22px;
+                    }
+                    .pic{
+                      margin-bottom: 10px;
+                      img{
+                        width: 100px;
+                        height: 100px;
+                      }
+                    }
+                    .decs{
+                      height: 32px;
+                      text-align: left;
+                      padding: 0 11px;
+                      line-height: 16px;
+                      overflow: hidden;
+                      word-wrap: break-word;
+                      word-break: break-all;
+                      color: @color-font;
+                      &:hover{
+                        color: @color-red;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

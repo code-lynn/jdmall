@@ -6,8 +6,12 @@
     <!--标题图标？？？shortcut-->
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="stylesheet/less" href="less/head.less"/>
+    <link rel="stylesheet/less" href="less/main.less"/>
     <script src="less/less-2.5.3.min.js"></script>
     <style></style>
+    <!--[if lt IE9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body style="background: #f6f6f6;">
 <!--网页头部-->
@@ -449,33 +453,216 @@
 <main>
     <!--京东秒杀-->
     <section class="sk">
-        <div class="content">
-            <div class="head">
-                <div class="left">
-                    <i></i>
-                    <i></i>
-                    <h3></h3>
-                    <a href="###">总有你想不到的低价 <b></b></a>
+        <div class="content w">
+            <div class="head clearfix">
+                <div class="left clearfix">
+                    <i class="corner1"></i>
+                    <i class="corner2"></i>
+                    <h3>京东秒杀</h3>
+                    <a href="###">总有你想不到的低价<b></b></a>
                 </div>
-                <div class="right">
+                <div class="right clearfix">
                     <span>当前场次</span>
-                    <div class="timer">
-                        <span>11</span><i>:</i><span>11</span><i>:</i><span>11</span>
+                    <div class="timer clearfix">
+                        <div><em>11</em></div>
+                        <i>:</i>
+                        <div><em>11</em></div>
+                        <i>:</i>
+                        <div><em>11</em></div>
                     </div>
                     <span>后结束抢购</span>
                 </div>
             </div>
             <div class="body">
-                <img src="img/main/sk/sk11.webp" alt="">
+                <ul>
+                    <li>
+                        <div class="pic">
+                            <a href="###">
+                                <img src="img/main/sk/sk11.webp" alt="">
+
+                            </a>
+                            <s class="shandow"></s>
+                        </div>
+                        <p class="item" >拉芙德酒庄 Chateau Lagrugere 城堡干红葡萄酒 法国进口红酒</p>
+                        <p class="sale"><span class="red">￥</span><b>198.00</b><span>￥1198.00</span></p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <a href="###">
+                                <img src="img/main/sk/sk22.webp" alt="">
+
+                            </a>
+                            <s class="shandow"></s>
+                        </div>
+                        <p class="item" >拉芙德酒庄 Chateau Lagrugere 城堡干红葡萄酒 法国进口红酒</p>
+                        <p class="sale"><span class="red">￥</span><b>198.00</b><span>￥1198.00</span></p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <a href="###">
+                                <img src="img/main/sk/sk33.webp" alt="">
+
+                            </a>
+                            <s class="shandow"></s>
+                        </div>
+                        <p class="item" >拉芙德酒庄 Chateau Lagrugere 城堡干红葡萄酒 法国进口红酒</p>
+                        <p class="sale"><span class="red">￥</span><b>198.00</b><span>￥1198.00</span></p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <a href="###">
+                                <img src="img/main/sk/sk44.webp" alt="">
+
+                            </a>
+                            <s class="shandow"></s>
+                        </div>
+                        <p class="item" >拉芙德酒庄 Chateau Lagrugere 城堡干红葡萄酒 法国进口红酒</p>
+                        <p class="sale"><span class="red">￥</span><b>198.00</b><span>￥1198.00</span></p>
+                    </li>
+                    <li class="no_border">
+                        <div class="pic">
+                            <a href="###">
+                                <img src="img/main/sk/sk55.webp" alt="">
+
+                            </a>
+                            <s class="shandow"></s>
+                        </div>
+                        <p class="item" >拉芙德酒庄 Chateau Lagrugere 城堡干红葡萄酒 法国进口红酒</p>
+                        <p class="sale"><span class="red">￥</span><b>198.00</b><span>￥1198.00</span></p>
+                    </li>
+                    <li class="sk_pic no_border">
+                        <img src="img/main/sk/sk66.jpg" alt="">
+                    </li>
+                </ul>
+                <img src="" alt="">
             </div>
         </div>
 
     </section>
     <!--发现好货 品牌头条 排行榜-->
     <section class="fhr">
-        <div class="found"></div>
-        <div class="headline"></div>
-        <div class="ranking"></div>
+        <div class="content w">
+            <div class="fd">
+                <div class="hd clearfix">
+                    <i class="corner1"></i>
+                    <i class="corner2"></i>
+                    <h3>发现好货</h3>
+                    <a href="###">发现生活品质<b></b></a>
+                </div>
+                <div class="bd">
+                    <ul class="clearfix">
+                        <li><a href="###">
+                            <p>霍尼韦尔 智能空气净化器</p>
+                            <img src="img/main/fhr/f1.webp" alt=""></a></li>
+                        <li class="border2"><a href="###">
+                            <p>霍尼韦尔 智能空气净化器</p>
+                            <img src="img/main/fhr/f2.webp" alt=""></a></li>
+                        <li><a href="###">
+                            <p>霍尼韦尔 智能空气净化器</p>
+                            <img src="img/main/fhr/f3.webp" alt=""></a></li>
+                        <li class="border4"><a href="###">
+                            <p>霍尼韦尔 智能空气净化器</p>
+                            <img src="img/main/fhr/f4.webp" alt=""></a></li>
+                        <li class="border5"><a href="###">
+                            <p>霍尼韦尔 智能空气净化器</p>
+                            <img src="img/main/fhr/f5.webp" alt=""></a></li>
+                        <li class="border6"><a href="###">
+                            <p>霍尼韦尔 智能空气净化器</p>
+                            <img src="img/main/fhr/f6.webp" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hl">
+                <div class="hd clearfix">
+                    <i class="corner1"></i>
+                    <i class="corner2"></i>
+                    <h3>品牌头条</h3>
+                    <a href="###">大牌资讯全掌握<b></b></a>
+                </div>
+                <div class="bd">
+                    <div class="brand_up">
+                        <div class="up_left">
+                            <a href="###">
+                                <p class="name">三星固态硬盘</p>
+                                <p class="desc">960系列震撼首发</p>
+                                <div class="split"></div>
+                                <div class="pic">
+                                    <img src="img/main/fhr/h1.webp" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="up_right">
+                            <a href="###">
+                                <p class="name">三星固态硬盘</p>
+                                <p class="desc">960系列震撼首发</p>
+                                <div class="split"></div>
+                                <div class="pic">
+                                    <img src="img/main/fhr/h2.webp" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="brand_down">
+                        <a href="###">
+                            <img src="img/main/fhr/h3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rk">
+                <div class="hd clearfix">
+                    <i class="corner1"></i>
+                    <i class="corner2"></i>
+                    <h3>品牌头条</h3>
+                    <a href="###">大牌资讯全掌握<b></b></a>
+                </div>
+                <div class="bd">
+                    <div class="tab clearfix">
+                        <a class="first" href="###">冲锋衣裤</a>
+                        <a href="###">手机通信</a>
+                        <a href="###">运动库</a>
+                        <a href="###">休闲鞋</a>
+                        <a href="###">男装</a>
+                    </div>
+                    <div class="con">
+                        <div class="chfy">
+                            <ul>
+                                <li><a class="rank1" href="###">
+                                    <div class="rank_num">1</div>
+                                    <div class="pic"><img src="img/main/fhr/r1.webp" alt=""></div>
+                                    <p class="decs">探路者冲锋衣 男女情侣款秋冬三合一冲锋衣抓绒保暖两件套 KAWE91305 男款宝蓝/深宝蓝 XXL</p>
+                                </a></li>
+                                <li><a href="###">
+                                    <div class="rank_num">2</div>
+                                    <div class="pic"><img src="img/main/fhr/r1.webp" alt=""></div>
+                                    <p class="decs">探路者冲锋衣 男女情侣款秋冬三合一冲锋衣抓绒保暖两件套 KAWE91305 男款宝蓝/深宝蓝 XXL</p>
+                                </a></li>
+                                <li ><a class="rank3" href="###">
+                                    <div class="rank_num">3</div>
+                                    <div class="pic"><img src="img/main/fhr/r1.webp" alt=""></div>
+                                    <p class="decs">探路者冲锋衣 男女情侣款秋冬三合一冲锋衣抓绒保暖两件套 KAWE91305 男款宝蓝/深宝蓝 XXL</p>
+                                </a></li>
+                                <li><a class="rank4" href="###">
+                                    <div class="rank_num">4</div>
+                                    <div class="pic"><img src="img/main/fhr/r1.webp" alt=""></div>
+                                    <p class="decs">探路者冲锋衣 男女情侣款秋冬三合一冲锋衣抓绒保暖两件套 KAWE91305 男款宝蓝/深宝蓝 XXL</p>
+                                </a></li>
+                                <li><a class="rank5" href="###">
+                                    <div class="rank_num">5</div>
+                                    <div class="pic"><img src="img/main/fhr/r1.webp" alt=""></div>
+                                    <p class="decs">探路者冲锋衣 男女情侣款秋冬三合一冲锋衣抓绒保暖两件套 KAWE91305 男款宝蓝/深宝蓝 XXL</p>
+                                </a></li>
+                                <li><a class="rank6" href="###">
+                                    <div class="rank_num">6</div>
+                                    <div class="pic"><img src="img/main/fhr/r1.webp" alt=""></div>
+                                    <p class="decs">探路者冲锋衣 男女情侣款秋冬三合一冲锋衣抓绒保暖两件套 KAWE91305 男款宝蓝/深宝蓝 XXL</p>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section>爱生活</section>
 </main>
@@ -494,6 +681,7 @@
         </ul>
     </section>
 </footer>
+<!--<script src="js/html5.min.js"></script>-->
 <script src="js/jquery-1.11.3.js"></script>
 <script src="js/header/slide.js"></script>
 <script src="js/index.js"></script>
